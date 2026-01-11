@@ -1,14 +1,17 @@
 import express from "express"
 
 const app = express()
-
 app.use(express.json())
 
 app.get("/", (_req, res) => {
   res.json({
     status: "online",
     service: "football-analyzer-bot",
-    endpoints: ["/health", "/run"]
+    endpoints: [
+      "/api/health",
+      "/api/run",
+      "/api/db-test"
+    ]
   })
 })
 
