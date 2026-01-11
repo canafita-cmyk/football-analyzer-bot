@@ -4,18 +4,7 @@ const app = express()
 app.use(express.json())
 
 app.get("/", (_req, res) => {
-  res.json({
-    status: "online",
-    service: "football-analyzer-bot"
-  })
-})
-
-app.get("/health", (_req, res) => {
-  res.json({ status: "ok" })
-})
-
-app.get("/run", (_req, res) => {
-  res.json({ message: "Bot executado com sucesso" })
+  res.json({ status: "online" })
 })
 
 export default app
