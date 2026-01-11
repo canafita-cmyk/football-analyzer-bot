@@ -13,9 +13,9 @@
     "db:push": "drizzle-kit generate && drizzle-kit migrate"
   },
   "dependencies": {
-    "...": "..." /* suas dependências */
+    "...": "..." 
   },
   "devDependencies": {
-    "...": "..." /* suas devDependencies incluindo "vite": "^7.3.1" */
+    "...": "..." 
   }
 }
